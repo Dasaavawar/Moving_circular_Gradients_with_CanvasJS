@@ -5,10 +5,10 @@ canvas.height = window.innerHeight * 2;
 ctx.scale(2, 2);
 
 const COLORS = [
-  {r: 45, g: 74, b: 277}, // blue
+  {r: 45, g: 74, b: 255}, // seablue
   {r: 258, g: 255, b: 89}, // yellow
   {r: 255, g: 104, b: 248}, // purple
-  {r: 44, g: 209, b: 252}, // blue
+  {r: 44, g: 209, b: 252}, // skyblue
   {r: 54, g: 233, b: 84} // green
 ];
 
