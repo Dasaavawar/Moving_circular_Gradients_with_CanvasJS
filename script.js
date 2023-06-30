@@ -72,10 +72,10 @@ class init {
     
     this.animate = this.animate.bind(this);
 
-    this.totalParticles = 24;
+    this.totalParticles = 36;
     this.particles = [];
-    this.maxRadius = Math.floor(canvas.width / 4.5);
-    this.minRadius = Math.floor(canvas.height / 2.5);
+    this.maxRadius = Math.floor((canvas.width + canvas.height) * 0.25);
+    this.minRadius = Math.floor((canvas.width + canvas.height) * 0.5);
 
     this.resize();
     this.animate();
