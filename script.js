@@ -4,7 +4,7 @@ canvas.width = window.innerWidth * 2;
 canvas.height = window.innerHeight * 2;
 ctx.scale(2, 2);
 
-const COLORS = [
+const colors = [
   {r: 45, g: 74, b: 255}, // seablue
   {r: 258, g: 255, b: 89}, // yellow
   {r: 255, g: 104, b: 248}, // purple
@@ -94,7 +94,7 @@ class init {
     this.particles = [];
   
     for (let i = 0; i < this.totalParticles; i++) {
-      const color = COLORS[curColor];
+      const color = colors[curColor];
       const radius = Math.random() * (this.maxRadius - this.minRadius) + this.minRadius;
       
       const item = new GlowParticle(
@@ -104,7 +104,7 @@ class init {
         color
       );
 
-      curColor = (curColor + 1) % COLORS.length;
+      curColor = (curColor + 1) % colors.length;
 
       this.particles[i] = item;
     }
