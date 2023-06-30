@@ -71,10 +71,10 @@ class init {
     this.pixelRatio = (window.devicePixelRatio > 1) ? 2 : 1;
     this.animate = this.animate.bind(this);
 
-    this.totalParticles = 28;
+    this.totalParticles = 45;
     this.particles = [];
     this.minRadius = Math.floor((canvas.width + canvas.height) * 0.03);
-    this.maxRadius = Math.floor((canvas.width + canvas.height) * 0.09);
+    this.maxRadius = Math.floor((canvas.width + canvas.height) * 0.15);
 
     this.resize();
     this.animate();
