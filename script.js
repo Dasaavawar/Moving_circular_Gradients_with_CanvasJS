@@ -69,7 +69,6 @@ class GlowParticle {
 class init {
   constructor() {
     this.pixelRatio = (window.devicePixelRatio > 1) ? 2 : 1;
-    
     this.animate = this.animate.bind(this);
 
     this.totalParticles = 28;
